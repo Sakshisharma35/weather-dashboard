@@ -6,7 +6,7 @@ SkyCast Pro: Advanced Weather & Air Quality DashboardSkyCast Pro is a high-perfo
 
 1. Real-Time Dashboard (Current & Hourly)Live Location Detection: Automatically detects user coordinates via the Geolocation API and performs reverse-geocoding to display the City Name.Dynamic Labeling: Intelligently switches labels (e.g., "Current Temp" vs. "Midday Temp") based on whether the user is viewing today or a past date.Hourly Visualizations: Six individual, high-contrast charts for:Temperature (Toggle between °C and °F)Relative Humidity (%)Precipitation (mm)Visibility (km)Wind Speed (10m)PM10 & PM2.5 (Combined comparative analysis)
 
-2. Long-Term Historical Analytics2-Year Data Boundary: Strictly enforced date picking logic that prevents future selections and limits historical lookups to a maximum of 2 years.Sun Cycle in IST: Sunrise and Sunset timings automatically converted to Indian Standard Time (GMT+5:30).Trend Analysis:Temperature: Area charts showing the "envelope" of Max, Min, and Mean temperatures.Precipitation: Bar charts for total daily rainfall.Wind: Max speed and dominant direction tracking.Air Quality: Long-term pollutant concentration trends.
+2. Long-Term Historical Analytics 2-Year Data Boundary: Strictly enforced date picking logic that prevents future selections and limits historical lookups to a maximum of 2 years.Sun Cycle in IST: Sunrise and Sunset timings automatically converted to Indian Standard Time (GMT+5:30).Trend Analysis:Temperature: Area charts showing the "envelope" of Max, Min, and Mean temperatures.Precipitation: Bar charts for total daily rainfall.Wind: Max speed and dominant direction tracking.Air Quality: Long-term pollutant concentration trends.
 
 🛠️ Tech Stack
 
@@ -23,13 +23,13 @@ Nominatim API	Reverse-geocoding for city name resolution
 📁 Project Structure
 src/
 ├── components/
-│   ├── WeatherCard.jsx     # Main stats and AQI breakdown
-│   ├── WeatherCharts.jsx   # Hourly dashboard visualizations
-│   └── HistoricalView.jsx  # Page 2: Long-term trend analysis
+│   ├── WeatherCard.jsx                    # Main stats and AQI breakdown
+│   ├── WeatherCharts.jsx                  # Hourly dashboard visualizations
+│   └── HistoricalView.jsx                 # Page 2: Long-term trend analysis
 ├── utils/
-│   └── api.js              # Pure logic for data fetching & geocoding
-├── App.jsx                 # Main state controller & Navigation
-└── main.jsx                # Application entry point
+│   └── api.js                             # Pure logic for data fetching & geocoding
+├── App.jsx                                # Main state controller & Navigation
+└── main.jsx                               # Application entry point
 
  Getting Started
 
