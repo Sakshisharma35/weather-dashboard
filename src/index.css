@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background: #0f172a;
+}
+
+/* Custom scrollbar for horizontal scrolling charts */
+.recharts-wrapper {
+  touch-action: pan-x;
+}
+
+.loader {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom right, #2563eb, #581c87);
+  color: white;
+  font-size: 1.5rem;
+}
